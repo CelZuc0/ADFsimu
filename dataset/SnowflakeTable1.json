@@ -7,7 +7,38 @@
 		},
 		"annotations": [],
 		"type": "SnowflakeV2Table",
-		"schema": [],
+		"schema": [
+			{
+				"name": "ID_INCREMENTAL",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "CD_CODE_POSTAL",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LB_NOM_COMMUNE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "CD_CODE_INSEE",
+				"type": "VARCHAR",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "DT_TECH_DATETIME_INSERT",
+				"type": "TIMESTAMP_LTZ",
+				"precision": 0,
+				"scale": 9
+			}
+		],
 		"typeProperties": {
 			"schema": "INNOV_MIGADF_SCHEMA",
 			"table": "TRANSCO_BSK_SCD_CP_CODEINSEE_DATABRUT_V2"

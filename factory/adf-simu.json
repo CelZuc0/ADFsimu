@@ -1,0 +1,15 @@
+{
+	"name": "adf-simu",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "francecentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "85b163b0-cc36-4c63-8aa5-d5f69873e9f5",
+		"tenantId": "332ffb8f-1487-4c09-b407-2e3f72acc3c9"
+	}
+}

@@ -5,14 +5,14 @@
 		"annotations": [],
 		"type": "SnowflakeV2",
 		"typeProperties": {
-			"authenticationType": "Basic",
+			"authenticationType": "KeyPair",
 			"accountIdentifier": "VRGLMGE-BUSINESSDECISIONPARTNER",
 			"user": "CZURITA",
 			"database": "GSO_DATABASE_C_ZURITA",
 			"warehouse": "GSO_WH",
 			"role": "GSO_RW_C_ZURITA",
 			"useUtcTimestamps": false,
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDk4QjVDNTUwLTgxMzktNDA1OS1BRTNELTNGNjk0REEwRkIwRV8zOTQ2YTM3Yy04ZmUwLTQ3ZTEtYjA1MC1jYWIzYzAzNGQ2N2YiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDk4QjVDNTUwLTgxMzktNDA1OS1BRTNELTNGNjk0REEwRkIwRV82MjMwYWQ3ZC1hMDkyLTRjNmUtYTFhMC0zMjM3OWNiMDE5MzIiDQp9"
 		},
 		"version": "1.1",
 		"connectVia": {

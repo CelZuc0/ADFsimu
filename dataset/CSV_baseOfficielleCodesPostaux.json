@@ -1,0 +1,44 @@
+{
+	"name": "CSV_baseOfficielleCodesPostaux",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "baseOfficielleCodesPostaux.csv",
+				"container": "adfechangesimu"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "code-commune-insee",
+				"type": "String"
+			},
+			{
+				"name": "nom-de-la-commune",
+				"type": "String"
+			},
+			{
+				"name": "code-postal",
+				"type": "String"
+			},
+			{
+				"name": "Libellé-d-acheminement",
+				"type": "String"
+			},
+			{
+				"name": "Ligne-5",
+				"type": "String"
+			}
+		]
+	}
+}

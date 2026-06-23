@@ -80,17 +80,6 @@
 									"type": "String",
 									"physicalType": "VARCHAR"
 								}
-							},
-							{
-								"source": {
-									"name": "DT_TECH_DATETIME_INSERT",
-									"type": "String"
-								},
-								"sink": {
-									"name": "DT_TECH_DATETIME_INSERT",
-									"type": "DateTimeOffset",
-									"physicalType": "TIMESTAMP_LTZ"
-								}
 							}
 						],
 						"typeConversion": true,

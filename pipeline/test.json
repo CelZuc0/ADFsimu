@@ -17,6 +17,15 @@
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
+						"additionalColumns": [
+							{
+								"name": "DT_TECH_DATETIME_INSERT",
+								"value": {
+									"value": "@utcNow()",
+									"type": "Expression"
+								}
+							}
+						],
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
@@ -35,6 +44,55 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "code-postal",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CD_CODE_POSTAL",
+									"type": "String",
+									"physicalType": "VARCHAR"
+								}
+							},
+							{
+								"source": {
+									"name": "nom-de-la-commune",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LB_NOM_COMMUNE",
+									"type": "String",
+									"physicalType": "VARCHAR"
+								}
+							},
+							{
+								"source": {
+									"name": "code-commune-insee",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CD_CODE_INSEE",
+									"type": "String",
+									"physicalType": "VARCHAR"
+								}
+							},
+							{
+								"source": {
+									"name": "DT_TECH_DATETIME_INSERT",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DT_TECH_DATETIME_INSERT",
+									"type": "DateTimeOffset",
+									"physicalType": "TIMESTAMP_LTZ"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
